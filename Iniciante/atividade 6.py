@@ -30,6 +30,11 @@ while nova_rodada == "s":
     salario_colaborador = float(input("Qual o salário do colaborador? "))
     continuar = input(f"Confirme os dados antes de continuar: Colaborador {nome_colaborador}, Salário {salario_colaborador:.2f}. Deseja continuar? s/n ")
    
+    while continuar == "n":
+        nome_colaborador = input("Qual o nome do colaborador? ")
+        salario_colaborador = float(input("Qual o salário do colaborador? "))
+        continuar = input(f"Confirme os dados antes de continuar: Colaborador {nome_colaborador}, Salário {salario_colaborador:.2f}. Deseja continuar? s/n ")
+    
     if salario_colaborador <= 1621.00: aliquota = 0.075
     elif salario_colaborador <= 2902.84: aliquota = 0.09
     elif salario_colaborador <= 4354.27: aliquota = 0.12
